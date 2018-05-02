@@ -12,7 +12,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
-                <version>1.0</version>
+                <version>1.4</version>
                 <dependencies>
                     <dependency>
                         <!--suppress MavenModelInspection --><groupId>@project.groupId@</groupId>
@@ -22,7 +22,7 @@
                 </dependencies>
                 <configuration>
                     <rules>
-                        <requireFilesContent>
+                        <forbidFilesContent>
                             <includes>
                                 <include>src/foo/bar</include>
                                 <include>src/foo/baz</include>
@@ -31,7 +31,7 @@
                             	<content>bla</content>
                             	<content>inside</content>
                             </contents>
-                        </requireFilesContent>
+                        </forbidFilesContent>
                     </rules>
                 </configuration>
             </plugin>

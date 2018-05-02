@@ -23,14 +23,10 @@
                 <configuration>
                     <rules>
                         <requireFilesContent>
-                            <includes>
-                                <include>src/foo/bar</include>
-                                <include>src/foo/baz</include>
-                            </includes>
-                            <contents>
-                            	<content>bla</content>
-                            	<content>inside</content>
-                            </contents>
+                            <files>
+                                <file>src/foo/bar.txt</file>
+                            </files>
+                            <content>foo</content>
                         </requireFilesContent>
                     </rules>
                 </configuration>

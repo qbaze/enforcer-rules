@@ -22,16 +22,16 @@
                 </dependencies>
                 <configuration>
                     <rules>
-                        <requireFilesContent>
-                            <includes>
-                                <include>src/foo/bar</include>
-                                <include>src/foo/baz</include>
-                            </includes>
+                        <forbidFilesContent>
+                            <files>
+                                <file>src/foo/bar</file>
+                                <file>src/foo/baz</file>
+                            </files>
                             <contents>
-                            	<content>bla</content>
-                            	<content>inside</content>
+                            	<content>i'm not</content>
+                            	<content>OUTSIDE</content>
                             </contents>
-                        </requireFilesContent>
+                        </forbidFilesContent>
                     </rules>
                 </configuration>
             </plugin>
